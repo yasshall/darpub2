@@ -1,0 +1,49 @@
+body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('image-hero-background.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #1e3a8a, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .btn-primary {
+            background-color: #ec4899;
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: #db2777;
+        }
+        .btn-secondary {
+            background-color: #1e3a8a;
+            color: white;
+        }
+        .btn-secondary:hover {
+            background-color: #1e40af;
+        }
+        .section-title {
+            color: #1e3a8a;
+        }
+        .feature-icon {
+            color: #ec4899;
+        }
+        .testimonial-card {
+            background-color: #f3f4f6;
+        }
+        .footer {
+            background-color: #111827;
+        }
+        .nav-link:hover,
+        .nav-link.active {
+            color: #ec4899;
+            border-bottom: 2px solid #ec4899;
+        }
+        .mobile-nav-link:hover,
+        .mobile-nav-link.active {
+            background-color: #f3f4f6;
+            color: #ec4899;
+        }
