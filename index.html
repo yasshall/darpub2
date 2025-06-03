@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Darpub Imprimerie - Votre partenaire d'impression</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('image-hero-background.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #1e3a8a, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .btn-primary {
+            background-color: #ec4899;
+            color: white;
+        }
+        .btn-primary:hover {
+            background-color: #db2777;
+        }
+        .btn-secondary {
+            background-color: #1e3a8a;
+            color: white;
+        }
+        .btn-secondary:hover {
+            background-color: #1e40af;
+        }
+        .section-title {
+            color: #1e3a8a;
+        }
+        .feature-icon {
+            color: #ec4899;
+        }
+        .testimonial-card {
+            background-color: #f3f4f6;
+        }
+        .footer {
+            background-color: #111827;
+        }
+        .nav-link:hover,
+        .nav-link.active {
+            color: #ec4899;
+            border-bottom: 2px solid #ec4899;
+        }
+        .mobile-nav-link:hover,
+        .mobile-nav-link.active {
+            background-color: #f3f4f6;
+            color: #ec4899;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+<header class="bg-white shadow-md sticky top-0 z-50">
+<div class="container mx-auto px-4 sm:px-6 py-3 flex justify-between items-center">
+<a class="flex items-center" href="index.html">
+<img alt="Logo Darpub Imprimerie" class="h-10 sm:h-12 mr-2 sm:mr-3" src="images/logoDarpub.webp"/>
+<span class="text-xl sm:text-2xl font-bold text-blue-800">Darpub <span class="text-pink-500">Imprimerie</span></span>
+</a>
+<nav class="hidden md:flex space-x-4 lg:space-x-6 items-center">
+<a class="nav-link text-gray-700 pb-1 transition duration-300 text-sm lg:text-base" href="index.html">Accueil</a>
+<a class="nav-link text-gray-700 pb-1 transition duration-300 text-sm lg:text-base" href="#services-preview">Services</a>
+<a class="nav-link text-gray-700 pb-1 transition duration-300 text-sm lg:text-base" href="#portfolio-preview">Portfolio</a>
+<a class="nav-link text-gray-700 pb-1 transition duration-300 text-sm lg:text-base" href="#apropos-preview">À Propos</a>
+<a class="nav-link text-gray-700 pb-1 transition duration-300 text-sm lg:text-base" href="#devis">Contact</a>
+<a class="ml-2 lg:ml-4 px-3 py-1.5 lg:px-4 lg:py-2 btn-primary rounded-lg text-xs lg:text-sm font-medium" href="#devis">Demander un devis</a>
+</nav>
+<button class="md:hidden text-gray-700 focus:outline-none" id="mobile-menu-button">
+<span class="material-icons">menu</span>
+</button>
+</div>
+<div class="hidden md:hidden bg-white shadow-lg" id="mobile-menu">
+<a class="mobile-nav-link block px-4 py-3 text-gray-700" href="index.html">Accueil</a>
+<a class="mobile-nav-link block px-4 py-3 text-gray-700" href="#services-preview">Services</a>
+<a class="mobile-nav-link block px-4 py-3 text-gray-700" href="#portfolio-preview">Portfolio</a>
+<a class="mobile-nav-link block px-4 py-3 text-gray-700" href="#apropos-preview">À Propos</a>
+<a class="mobile-nav-link block px-4 py-3 text-gray-700" href="#devis">Contact</a>
+<a class="block px-4 py-3 text-white bg-pink-500 hover:bg-pink-600 text-center font-medium" href="devis.html">Demander un devis</a>
+</div>
+</header>
+<main id="main-content">
+    <section class="bg-gradient-to-br from-[#0E3A62] via-[#7F3F98] to-[#00B3D6] text-white py-24 md:py-32 lg:py-40" id="accueil">
+        <div class="container mx-auto px-4 sm:px-6 text-center">
+          <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
+            Impressions de Qualité,<br class="hidden md:block" />
+            <span class="text-[#C02C95]">Impact Garanti</span>
+          </h1>
+          <p class="text-lg sm:text-xl md:text-2xl text-white/90 mb-8 max-w-2xl mx-auto">
+            Votre partenaire de confiance pour tous vos besoins d'impression. De la conception à la réalisation, nous donnons vie à vos idées.
+          </p>
+          <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+            <a href="#services-preview"
+               class="px-8 py-3 bg-[#C02C95] text-white rounded-xl text-lg font-semibold hover:bg-pink-500 transition duration-300 shadow-lg w-full sm:w-auto">
+              Nos Services
+            </a>
+            <a href="#devis"
+               class="px-8 py-3 bg-white text-[#0E3A62] rounded-xl text-lg font-semibold hover:bg-gray-100 transition duration-300 shadow-lg w-full sm:w-auto">
+              Contactez-nous
+            </a>
+          </div>
+        </div>
+      </section>
+                 
+<section class="py-12 md:py-16 lg:py-24 bg-white" id="services-preview">
+<div class="container mx-auto px-4 sm:px-6">
+<h2 class="text-2xl sm:text-3xl md:text-4xl font-bold section-title text-center mb-8 sm:mb-12">Nos Solutions d'Impression</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+<div class="bg-gray-100 p-6 sm:p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+<div class="flex items-center justify-center mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-pink-100">
+<span class="material-icons feature-icon text-2xl sm:text-3xl">print</span>
+</div>
+<h3 class="text-lg sm:text-xl font-semibold text-blue-800 mb-2 sm:mb-3">Impression Numérique</h3>
+<p class="text-sm sm:text-base text-gray-600">Idéale pour les petites et moyennes séries, rapide et de haute qualité pour vos flyers, brochures, cartes de visite.</p>
+</div>
+<div class="bg-gray-100 p-6 sm:p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+<div class="flex items-center justify-center mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-pink-100">
+<span class="material-icons feature-icon text-2xl sm:text-3xl">layers</span>
+</div>
+<h3 class="text-lg sm:text-xl font-semibold text-blue-800 mb-2 sm:mb-3">Impression Offset</h3>
+<p class="text-sm sm:text-base text-gray-600">Parfaite pour les grands volumes, offrant une qualité exceptionnelle et des coûts réduits pour vos catalogues et magazines.</p>
+</div>
+<div class="bg-gray-100 p-6 sm:p-8 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 md:col-span-2 lg:col-span-1">
+<div class="flex items-center justify-center mb-4 sm:mb-6 w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-pink-100">
+<span class="material-icons feature-icon text-2xl sm:text-3xl">palette</span>
+</div>
+<h3 class="text-lg sm:text-xl font-semibold text-blue-800 mb-2 sm:mb-3">Conception Graphique</h3>
+<p class="text-sm sm:text-base text-gray-600">Notre équipe créative vous accompagne pour créer des designs percutants qui valorisent votre message.</p>
+</div>
+</div>
+<div class="text-center mt-8 sm:mt-12">
+<a class="px-6 py-2.5 sm:px-8 sm:py-3 btn-secondary rounded-lg text-base sm:text-lg font-medium hover:shadow-lg transition duration-300" href="#services-preview">Découvrir tous nos services</a>
+</div>
+</div>
+</section>
+<section class="py-12 md:py-16 lg:py-24 bg-gray-50" id="portfolio-preview">
+    <div class="container mx-auto px-4 sm:px-6">
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold section-title text-center mb-8 sm:mb-12">Nos Réalisations Récentes</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        
+        <!-- Box 1 -->
+        <div class="rounded-lg overflow-hidden shadow-lg group">
+          <img alt="Cartes de visite" class="w-full h-56 sm:h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="images/carte_visite.jpg"/>
+          <div class="p-4 sm:p-6 bg-white">
+            <h3 class="text-lg sm:text-xl font-semibold text-blue-800 mb-1 sm:mb-2">Cartes de visite Premium</h3>
+            <p class="text-xs sm:text-sm text-gray-600">Conception et impression de cartes de visite avec finition vernis sélectif.</p>
+          </div>
+        </div>
+  
+        <!-- Box 2 -->
+        <div class="rounded-lg overflow-hidden shadow-lg group">
+          <img alt="Brochures Corporatives" class="w-full h-56 sm:h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="images/img3.jpg"/>
+          <div class="p-4 sm:p-6 bg-white">
+            <h3 class="text-lg sm:text-xl font-semibold text-blue-800 mb-1 sm:mb-2">Logo 3D</h3>
+            <p class="text-xs sm:text-sm text-gray-600">Impression offset de brochures pour une présentation d'entreprise.</p>
+          </div>
+        </div>
+  
+        <!-- Box 3 -->
+        <div class="rounded-lg overflow-hidden shadow-lg group">
+          <img alt="Affiches Grand Format" class="w-full h-56 sm:h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="images/img4.jpg"/>
+          <div class="p-4 sm:p-6 bg-white">
+            <h3 class="text-lg sm:text-xl font-semibold text-blue-800 mb-1 sm:mb-2">Ensign & Drapau</h3>
+            <p class="text-xs sm:text-sm text-gray-600">Création et impression d'affiches grand format pour un festival local.</p>
+          </div>
+        </div>
+  
+        <!-- Box 4 -->
+        <div class="rounded-lg overflow-hidden shadow-lg group">
+          <img alt="Packaging Personnalisé" class="w-full h-56 sm:h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="images/Flyer.jpg"/>
+          <div class="p-4 sm:p-6 bg-white">
+            <h3 class="text-lg sm:text-xl font-semibold text-blue-800 mb-1 sm:mb-2">Flyers</h3>
+            <p class="text-xs sm:text-sm text-gray-600">Design et fabrication de packaging haut de gamme sur mesure.</p>
+          </div>
+        </div>
+  
+        <!-- Box 5 -->
+        <div class="rounded-lg overflow-hidden shadow-lg group">
+          <img alt="Flyers Promotionnels" class="w-full h-56 sm:h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="images/menus.jpg"/>
+          <div class="p-4 sm:p-6 bg-white">
+            <h3 class="text-lg sm:text-xl font-semibold text-blue-800 mb-1 sm:mb-2">Menus</h3>
+            <p class="text-xs sm:text-sm text-gray-600">Création de flyers attractifs pour campagnes publicitaires locales.</p>
+          </div>
+        </div>
+  
+        <!-- Box 6 -->
+        <div class="rounded-lg overflow-hidden shadow-lg group">
+          <img alt="Signalétique Extérieure" class="w-full h-56 sm:h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="images/img7.jpg"/>
+          <div class="p-4 sm:p-6 bg-white">
+            <h3 class="text-lg sm:text-xl font-semibold text-blue-800 mb-1 sm:mb-2">Signalétique Extérieure</h3>
+            <p class="text-xs sm:text-sm text-gray-600">Production et pose d'enseignes et panneaux signalétiques.</p>
+          </div>
+        </div>
+  
+      </div>
+  
+      <div class="text-center mt-8 sm:mt-12">
+        <a class="px-6 py-2.5 sm:px-8 sm:py-3 btn-secondary rounded-lg text-base sm:text-lg font-medium hover:shadow-lg transition duration-300" href="https://instagram.com/darpubmaroc">Voir plus de projets</a>
+      </div>
+    </div>
+  </section>
+
+<section class="py-16 md:py-24 bg-white" id="apropos-preview">
+<div class="container mx-auto px-6">
+<div class="flex flex-col lg:flex-row items-center gap-12">
+<div class="lg:w-1/2">
+<img alt="Équipe de Darpub Imprimerie" class="rounded-xl shadow-xl w-full" src="images/img1.jpeg"/>
+</div>
+<div class="lg:w-1/2">
+<h2 class="text-3xl md:text-4xl font-bold section-title mb-6">Qui Sommes-Nous ?</h2>
+<p class="text-gray-700 mb-4 text-lg">Depuis plus de 15 ans, Darpub Imprimerie s'engage à fournir des solutions d'impression innovantes et de haute qualité. Notre passion pour l'impression se reflète dans chaque projet que nous entreprenons.</p>
+<p class="text-gray-700 mb-4">Nous combinons expertise technique, équipements de pointe et un service client personnalisé pour répondre à vos attentes les plus exigeantes.</p>
+
+</div>
+</div>
+</div>
+</section>  
+<section class="py-12 md:py-16 lg:py-24 bg-blue-700 text-white" id="why-choose-us">
+    <div class="container mx-auto px-4 sm:px-6">
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12">Pourquoi nous choisir</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        
+        <div class="p-6 sm:p-8 rounded-xl shadow-lg bg-blue-600">
+          <div class="flex items-center mb-4">
+            <!-- Icon: Star -->
+            <svg class="w-8 h-8 text-pink-400 mr-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+            </svg>
+            <h3 class="font-semibold text-lg sm:text-xl">Qualité supérieure</h3>
+          </div>
+          <p class="text-sm sm:text-base">Nous utilisons des équipements de pointe et des matériaux de haute qualité pour garantir des résultats irréprochables à chaque impression.</p>
+        </div>
+  
+        <div class="p-6 sm:p-8 rounded-xl shadow-lg bg-blue-600">
+          <div class="flex items-center mb-4">
+            <!-- Icon: Clock -->
+            <svg class="w-8 h-8 text-pink-400 mr-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            <h3 class="font-semibold text-lg sm:text-xl">Délais respectés</h3>
+          </div>
+          <p class="text-sm sm:text-base">Notre équipe s’engage à respecter vos délais, même les plus serrés, tout en maintenant un service de qualité.</p>
+        </div>
+  
+        <div class="p-6 sm:p-8 rounded-xl shadow-lg bg-blue-600">
+          <div class="flex items-center mb-4">
+            <!-- Icon: User -->
+            <svg class="w-8 h-8 text-pink-400 mr-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5.121 17.804A9 9 0 1119.878 6.196M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
+            <h3 class="font-semibold text-lg sm:text-xl">Accompagnement personnalisé</h3>
+          </div>
+          <p class="text-sm sm:text-base">Un conseiller dédié vous accompagne tout au long de votre projet pour s'assurer qu’il corresponde parfaitement à vos attentes.</p>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+<section class="py-20 bg-gradient-custom" id="devis">
+    <div class="container mx-auto px-6">
+      <div class="bg-white p-10 md:p-16 rounded-lg shadow-2xl max-w-3xl mx-auto">
+        <h2 class="text-4xl font-bold playfair text-center mb-10 gradient-text">Obtenir un Devis Gratuit</h2>
+  
+        <!-- Netlify-enabled form with notification support -->
+        <form name="devis" method="POST" data-netlify="true" netlify-honeypot="bot-field" onsubmit="handleFormSubmit(event)">
+          <!-- Required hidden input for Netlify form -->
+          <input type="hidden" name="form-name" value="devis" />
+          <p class="hidden">
+            <label>Ne remplissez pas ce champ : <input name="bot-field" /></label>
+          </p>
+  
+          <!-- Form fields -->
+          <div class="grid md:grid-cols-2 gap-6 mb-6">
+            <div>
+              <label class="block text-gray-700 font-medium mb-2" for="nom">Nom Complet</label>
+              <input class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-purple-500 focus:border-purple-500" id="nom" name="nom" required type="text" />
+            </div>
+            <div>
+              <label class="block text-gray-700 font-medium mb-2" for="email">Adresse Email</label>
+              <input class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-purple-500 focus:border-purple-500" id="email" name="email" required type="email" />
+            </div>
+          </div>
+  
+          <div class="mb-6">
+            <label class="block text-gray-700 font-medium mb-2" for="telephone">Téléphone (Optionnel)</label>
+            <input class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-purple-500 focus:border-purple-500" id="telephone" name="telephone" type="tel" />
+          </div>
+  
+          <div class="mb-6">
+            <label class="block text-gray-700 font-medium mb-2" for="type_projet">Type de Projet</label>
+            <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-purple-500 focus:border-purple-500 bg-white" id="type_projet" name="type_projet" required>
+              <option value="">Sélectionnez un type de projet</option>
+              <option value="cartes_visite">Cartes de Visite</option>
+              <option value="flyers_brochures">Flyers / Brochures</option>
+              <option value="affiches_bannieres">Affiches / Bannières</option>
+              <option value="objets_publicitaires">Objets Publicitaires</option>
+              <option value="autre">Autre (précisez ci-dessous)</option>
+            </select>
+          </div>
+  
+          <div class="mb-6">
+            <label class="block text-gray-700 font-medium mb-2" for="message">Description de votre projet</label>
+            <textarea class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-purple-500 focus:border-purple-500" id="message" name="message" required rows="5"></textarea>
+          </div>
+  
+          <!-- Submit button -->
+          <div class="text-center">
+            <button class="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-pink-500 hover:to-yellow-500 text-white font-semibold px-10 py-4 rounded-full text-lg transition duration-300 shadow-md hover:shadow-lg" type="submit">
+              Envoyer la Demande
+            </button>
+          </div>
+        </form>
+  
+        <!-- Notification after form is submitted -->
+        <div id="form-notification" class="text-center mt-6 text-green-600 font-semibold hidden">
+          Merci pour votre demande ! Nous vous répondrons rapidement.
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- JavaScript to handle Netlify submission without redirect -->
+  <script>
+    function handleFormSubmit(event) {
+      event.preventDefault();
+  
+      const form = event.target;
+      const formData = new FormData(form);
+  
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+      })
+      .then(() => {
+        form.reset();
+        document.getElementById("form-notification").classList.remove("hidden");
+      })
+      .catch((error) => {
+        alert("Une erreur s'est produite. Veuillez réessayer.");
+        console.error("Form submission error:", error);
+      });
+    }
+  </script>
+  
+<section class="py-12 md:py-16 lg:py-24 bg-pink-500 text-white" id="devis-cta">
+<div class="container mx-auto px-4 sm:px-6 text-center">
+<h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">Prêt à Démarrer Votre Projet ?</h2>
+<p class="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 max-w-md sm:max-w-xl lg:max-w-2xl mx-auto">Obtenez un devis personnalisé et gratuit pour vos besoins d'impression. Notre équipe est prête à vous conseiller.</p>
+<a class="px-8 py-3 sm:px-10 sm:py-4 bg-white text-blue-800 rounded-lg text-lg sm:text-xl font-bold hover:bg-gray-100 hover:shadow-xl transition duration-300" href="#devis">Demander un Devis Gratuit</a>
+</div>
+</section>
+</main>
+<footer class="footer text-gray-300 py-10 sm:py-12">
+<div class="container mx-auto px-4 sm:px-6">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+<div>
+<h4 class="text-lg sm:text-xl font-semibold text-white mb-3 sm:mb-4">Darpub Imprimerie</h4>
+<p class="text-xs sm:text-sm">Votre partenaire pour des impressions de qualité supérieure. Nous transformons vos idées en réalité.</p>
+<img alt="Logo Darpub Imprimerie Footer" class="h-8 sm:h-10 mt-3 sm:mt-4 opacity-80" src="images/logoDarpub.webp"/>
+</div>
+<div>
+<h4 class="text-base sm:text-lg font-semibold text-white mb-3 sm:mb-4">Liens Rapides</h4>
+<ul class="space-y-1.5 sm:space-y-2 text-xs sm:text-sm">
+<li><a class="hover:text-pink-400 transition duration-300" href="#services-preview">Nos Services</a></li>
+<li><a class="hover:text-pink-400 transition duration-300" href="#portfolio-preview">Portfolio</a></li>
+<li><a class="hover:text-pink-400 transition duration-300" href="#apropos-preview">À Propos de Nous</a></li>
+<li><a class="hover:text-pink-400 transition duration-300" href="#devis">Contactez-Nous</a></li>
+</ul>
+</div>
+<div>
+    <h4 class="text-base sm:text-lg font-semibold text-white mb-3 sm:mb-4">Informations</h4>
+    <ul class="space-y-1.5 sm:space-y-2 text-xs sm:text-sm text-white/90">
+      <li>
+        <a href="tel:+212612345678" class="hover:text-pink-400 transition duration-300">
+          📞 +212 6 36 46 96 19
+        </a>
+      </li>
+      <li>
+        <a href="mailto:darpubmaroc@gmail.com" class="hover:text-pink-400 transition duration-300">
+          ✉️ darpubmaroc@gmail.com
+        </a>
+      </li>
+      <li>
+        <span class="block">
+          📍 Casablanca, Maroc
+        </span>
+      </li>
+    </ul>
+    
+</div>
+<div>
+    <h4 class="text-base sm:text-lg font-semibold text-white mb-3 sm:mb-4">Suivez-Nous</h4>
+    <div class="flex space-x-4">
+      <!-- Facebook -->
+      <a class="text-gray-300 hover:text-pink-400 transition duration-300" href="https://facebook.com/Darpub/" target="_blank" rel="noopener">
+        <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 24 24">
+          <path clip-rule="evenodd" fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+        </svg>
+      </a>
+    
+      <!-- Instagram -->
+      <a class="text-gray-300 hover:text-pink-400 transition duration-300" href="https://www.instagram.com/darpubmaroc" target="_blank" rel="noopener">
+        <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zM12 7.25a4.75 4.75 0 110 9.5 4.75 4.75 0 010-9.5zm0 1.5a3.25 3.25 0 100 6.5 3.25 3.25 0 000-6.5zm5.25-.75a1 1 0 110 2 1 1 0 010-2z"/>
+        </svg>
+      </a>
+    </div>
+    
+</div>
+</div>
+<div class="border-t border-gray-700 pt-6 sm:pt-8 text-center text-xs sm:text-sm">
+<p>© <span id="currentYear"></span> Darpub Imprimerie. Tous droits réservés. Site conçu avec <span class="text-pink-400">♥</span>.</p>
+</div>
+</div>
+</footer>
+<script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        // Set current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+        // Active Nav Link Styling
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+            const navLinks = document.querySelectorAll('header nav a');
+            const mobileNavLinks = document.querySelectorAll('#mobile-menu a');
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPath) {
+                    link.classList.add('active');
+                }
+            });
+            mobileNavLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPath) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+</body></html>
